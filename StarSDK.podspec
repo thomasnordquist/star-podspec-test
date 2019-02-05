@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.preserve_paths = 'Distributables/StarIO.framework'
   s.public_header_files = 'Distributables/StarIO.framework/Versions/A/Headers/**/*.h'
-  s.header_mappings_dir = 'Distributables'
+  s.header_mappings_dir = 'Distributables/StarIO.framework'
 #  s.vendored_frameworks = 'Distributables/StarIO.framework'
   s.frameworks = 'SystemConfiguration', 'CoreLocation', 'ExternalAccessory', 'AudioToolbox', 'AVFoundation', 'MediaPlayer', 'QuartzCore', 'Accelerate', 'MessageUI', 'CoreData'
   s.library   = 'z'
