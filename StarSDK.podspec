@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = 'https://www.starmicronics.de/de/'
   s.source = { :http => 'http://dev.wechatapp.com/download/sdk/WeChat_SDK_iOS_en.zip' }
-  s.source_files = "**/*.{swift}", "Distributables/StarIO.framework/**/*.h"
+  s.source_files = "**/*.{swift}" # , "Distributables/StarIO.framework/**/*.h"
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'fixme' => 'fixme@example.com' }
   s.platform     = :ios, '8.0'
