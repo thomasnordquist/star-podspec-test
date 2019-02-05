@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.library   = 'z'
   s.xcconfig  =  { 
     'OTHER_LDFLAGS' => '-ObjC', 
-    'PODS_HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables/StarIO.framework/Versions/A/Headers"',
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/"', 
+    'PODS_HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables/StarIO.framework/"',
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables"', 
     'GCC_PREPROCESSOR_DEFINITIONS': "$(inherited) BUILDING_STARIO=1"
   }
 end
