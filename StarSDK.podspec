@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.preserve_paths = 'Distributables/StarIO.framework'
   s.public_header_files = 'Distributables/StarIO.framework/**/*.h'
-  s.header_mappings_dir = 'Distributables/StarIO.framework/Versions/A'
+  s.header_mappings_dir = 'Distributables/StarIO.framework/Versions/A/Headers'
 #  s.header_dir = 'Distributables/StarIO.framework/Versions/A/Headers'
   s.vendored_frameworks = 'Distributables/StarIO.framework'
   s.frameworks = 'SystemConfiguration', 'CoreLocation', 'ExternalAccessory', 'AudioToolbox', 'AVFoundation', 'MediaPlayer', 'QuartzCore', 'Accelerate', 'MessageUI', 'CoreData'
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.xcconfig  =  { 
     'OTHER_LDFLAGS' => '-ObjC', 
     'PODS_HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables/StarIO.framework/Versions/A/Headers"',
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables/StarIO.framework"', 
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables/StarIO.framework/Versions/A/Headers"', 
     'GCC_PREPROCESSOR_DEFINITIONS': "$(inherited) BUILDING_STARIO=1"
   }
 end
