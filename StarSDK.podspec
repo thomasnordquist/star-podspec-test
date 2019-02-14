@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { 'fixme' => 'fixme@example.com' }
   s.platform     = :ios, '8.0'
   s.preserve_paths = 'Distributables/StarIO.framework'
-  s.public_header_files = 'Distributables/StarIO.framework/**/*.h'
+  s.public_header_files = 'Distributables/StarIO.framework/Versions/A/**/*.h'
   s.header_mappings_dir = 'Distributables/StarIO.framework/Versions/A/Headers'
 #  s.header_dir = 'Distributables/StarIO.framework/Versions/A/Headers'
   s.vendored_frameworks = 'Distributables/StarIO.framework'
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.xcconfig  =  { 
     'OTHER_LDFLAGS' => '-ObjC', 
     'PODS_HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables/StarIO.framework/Versions/A/Headers"',
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/"', 
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables"', 
     'GCC_PREPROCESSOR_DEFINITIONS': "$(inherited) BUILDING_STARIO=1"
   }
 end
