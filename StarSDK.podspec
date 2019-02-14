@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
                     For detailed information, see Star micronics website.
                    DESC
   s.homepage     = 'https://www.starmicronics.de/de/'
-  s.source = { :http => 'http://dev.wechatapp.com/download/sdk/WeChat_SDK_iOS_en.zip' }
+  s.source = { :git => 'https://github.com/thomasnordquist/star-podspec-test.git' }
   s.source_files = "**/*.{swift}" 
 # , "Distributables/StarIO.framework/**/*.h"
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
