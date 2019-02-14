@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = 'https://www.starmicronics.de/de/'
   s.source = { :git => 'https://github.com/thomasnordquist/star-podspec-test.git' }
-  s.source_files = "**/*.{swift}" 
-# , "Distributables/StarIO.framework/**/*.h"
+  s.source_files = "**/*.{swift}", "Distributables/StarIO.framework/**/*.h"
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'fixme' => 'fixme@example.com' }
   s.platform     = :ios, '8.0'
@@ -19,10 +18,10 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'Distributables/StarIO.framework'
   s.frameworks = 'SystemConfiguration', 'CoreLocation', 'ExternalAccessory', 'AudioToolbox', 'AVFoundation', 'MediaPlayer', 'QuartzCore', 'Accelerate', 'MessageUI', 'CoreData'
   s.library   = 'z'
-  s.xcconfig  =  { 
-    'OTHER_LDFLAGS' => '-ObjC', 
+  s.xcconfig  =  {
+    'OTHER_LDFLAGS' => '-ObjC',
     'PODS_HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables/StarIO.framework/Versions/A/Headers"',
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables"', 
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/StarSDK/Distributables"',
     'GCC_PREPROCESSOR_DEFINITIONS': "$(inherited) BUILDING_STARIO=1"
   }
 end
