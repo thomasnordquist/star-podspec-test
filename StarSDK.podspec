@@ -11,10 +11,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'fixme' => 'fixme@example.com' }
   s.platform     = :ios, '8.0'
-#  s.preserve_paths = 'Distributables/StarIO.framework/**/*'
   s.public_header_files = 'Distributables/StarIO.framework/**/*.h'
-#  s.header_mappings_dir = 'Distributables/StarIO.framework/Versions/A/Headers'
-  s.header_dir = 'Distributables/StarIO.framework/Headers'
+  s.header_dir = 'StarIO'
   s.prepare_command = <<-CMD
     ./fixIncludes.sh Distributables/StarIO.framework/Headers/*.h Distributables/StarIO.framework/Headers/*/*.h
   CMD
