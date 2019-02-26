@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Distributables/StarIO.framework/**/*.h'
 #  s.header_mappings_dir = 'Distributables/StarIO.framework/Versions/A/Headers'
   s.header_dir = 'Distributables/StarIO.framework/Headers'
-  s.prepare_command = "./fixIncludes.sh Distributables/StarIO.framework/**/*.h",
+#  s.prepare_command = "./fixIncludes.sh Distributables/StarIO.framework/**/*.h",
   s.vendored_frameworks = 'Distributables/StarIO.framework'
   s.frameworks = 'SystemConfiguration', 'CoreLocation', 'ExternalAccessory', 'AudioToolbox', 'AVFoundation', 'MediaPlayer', 'QuartzCore', 'Accelerate', 'MessageUI', 'CoreData'
   s.library   = 'z'
