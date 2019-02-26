@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = 'https://www.starmicronics.de/de/'
   s.source = { :git => 'https://github.com/thomasnordquist/star-podspec-test.git' }
-  s.source_files = "**/*.{swift}", "Distributables/StarIO.framework/**/*.h"
+  s.source_files = "Distributables/StarIO.framework/**/*.h"
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'fixme' => 'fixme@example.com' }
   s.platform     = :ios, '8.0'
